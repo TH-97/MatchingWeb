@@ -6,7 +6,7 @@
     <title>Document</title>
 
     <style>
-        *{margin: 0;padding: 0; text-align: center;}
+        *{margin: 0;padding: 0; text-align: center; margin: 0 auto;}
         .matching{
             border: 1px solid #000;
             border-radius: 3px;
@@ -23,9 +23,22 @@
         <div>소개팅</div>
         <div>이미지</div>
         <div><p>매칭이 비활성화 되어있어요 <br> 매칭을 활성하하고 이상형의 카드를 받아볼까요</p></div>
-        <div><button type="button">매칭 활성화 하기</button></div>
+        <div><button type="button" onclick="matching();">매칭 활성화 하기</button></div>
+    </div>
+
+    <div class="mission">
+        <h2>신규 가입자 미션 ></h2>
+        <p>미션을 완료해보세요</p>
+        <div></div>
+        <div></div>
     </div>
     </section>
+
+    <script>
+        function matching(){
+            console.log("매칭탭으로 이동")
+        }
+    </script>
     
 </body>
 </html>
