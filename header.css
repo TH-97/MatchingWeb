@@ -3,29 +3,25 @@
     src: url(font/Jalnan2/Jalnan2.otf);
     font-family: "jua";
 }
-body{
-    font-family: "jua";
-}
-header .headerTop{
-    margin: 0 auto;
-    width: 420px;
-    background-color: white;
-    padding: 1rem 1.4rem;
+header{
+    overflow: hidden;
     display: flex;
     align-items: center;
+    padding: 1rem 1.4rem;
+
 }
 header .icon{
     width: 30px;
-    height: auto;
 }
 header .iconText{
     display: inline-block;
     font-size: 20px;
     color: #777;
     margin-left: 10px;
+    font-family: "jua";
+    
 }
-header .right-icon{
-    width: 30px;
-    height: auto;
-    margin-left: 225px;
+header .ins-icon{
+    width: 24px;
+    margin-left: 190px;
 }

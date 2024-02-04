@@ -4,48 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- header css적용 -->
     <link rel="stylesheet" href="header.css">
+    
     <style>
-        *{margin: 0;padding: 0; text-align: center; margin: 0 auto;}
         body{
-            background-color: #777;
+            /* background-color: #99999999; */
+        }
+        #body{
+            margin: 0 auto;
+            width: 420px;
+            border: 1px solid #000;
+            background-color: white;
+            border-radius: 10px;
         }
         .matching{
             border: 1px solid #000;
-            border-radius: 3px;
-            width: 420px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 24px 24px;
+            padding: 15px 20px;
+            font-family: "Noto Sans KR", sans-serif;
+
         }
-        .matching div{
+        .matching img{
+            width: 100%;
+            margin-top: 7px;
+            /* transform: perspective(600px) rotateY(360deg);
+            backface-visibility: hidden;
+            transition: transform .5s linear 0s; */
+        }
+        .matching .mat-text{
             border: 1px solid #000;
+            width: 50px;
+            margin: 0 auto;
+            padding: 3px 10px;
+            border-radius: 40px;
+            font-size: 15px;
+            
+        }
+        .matching button{
+            margin-top: 20px;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 20px 50px;
+            border-radius: 40px;
+            border: none;
+            background-color: blueviolet;
+            color: white;
         }
     </style>
 </head>
 <body>
+    <div id="body">
     <header>
-        <div class="headerTop">
-            <div><img class="icon" src="img/macicon.png"></div>
-            <p class="iconText">taehunpick</p>
-            <div><img class="right-icon" src="img/right-icon2.png"></div>
-        </div>
+        <img class="icon" src="img/macicon.png">
+        <p class="iconText">taehunpick</p>
+        <img class="ins-icon" src="img/ins-icon.jpeg" alt="">
     </header>
+    
+
+
     <section>
     <div class="matching">
-        <div>소개팅</div>
-        <div>이미지</div>
-        <div><p>매칭이 비활성화 되어있어요 <br> 매칭을 활성하하고 이상형의 카드를 받아볼까요</p></div>
+        <div class="mat-text">
+            <p>소개팅</p>
+        </div>
+        <div><img src="img/card.jpeg" alt=""></div>
+        <div><p style="font-size: 12px; margin-top: 7px;">매칭이 비활성화 되어있어요 <br> 매칭을 활성하하고 이상형의 카드를 받아볼까요</p></div>
         <div><button type="button" onclick="matching();">매칭 활성화 하기</button></div>
     </div>
 
+
+    <style>
+        .mission{
+            padding: 15px 20px;
+            font-family: "Noto Sans KR", sans-serif;
+            
+            
+        }
+        .mission h1{
+            font-size: 18px;
+        }
+        .mission .mis-box{
+            padding: 10px 10px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .mission .mis-box .mis-box-left{
+            float: left;
+        }
+        .mission .mis-box .mis-box-left2{
+            float: left;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        .mission .mis-box .mis-box-right{
+            float: right;
+        }
+    </style>
+
     <div class="mission">
-        <h2>신규 가입자 미션 ></h2>
-        <p>미션을 완료해보세요</p>
+        <h1>신규 가입자 미션 ></h1>
+        <p style="font-size: 13px;">미션을 완료해보세요</p>
         <div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="mis-box">
+                <div class="mis-box-left"><img style="width: 50px; height: 40px;" src="img/pen2.webp"></div>
+                <div class="mis-box-left2">필수미션 <br> 자기소개 쓰기</div>
+                <div class="mis-box-right">-></div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .review{
+            padding: 15px 20px;
+            font-family: "Noto Sans KR", sans-serif;
+        }
+        .review h1{
+            font-size: 18px;
+        }
+        .re-box-top{
+            border: 1px solid #000;
+            border-radius: 10px;
+            padding: 10px 10px;
+        }
+        .review .re-box{
+            display: flex;
+            align-items: center;
+        }
+        .review .re-box .re-box-left2{
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        .review .re-box .re-box-right{
+            font-size: 12px;
+            margin-left: 190px;
+        }
+        .review .re-box-top .re-text{
+            margin-top: 10px;
+        }
+        .re-box-left{
+            background-color: white;
+        }
+    </style>
+
+    <div class="review">
+        <h1>나도 할 수 있다! 훈픽 연애 성공 후기 ></h1>
+        <p style="font-size: 13px;">연픽을 통해 연래를 시작한 유저들의 후기를 모아봐요</p>
+        <div class="re-box-top">
+            <div class="re-box">
+                <div class="re-box-left"><img style="width: 50px; height: 40px;" src="img/ani.png"></div>
+                <div class="re-box-left2">별점 5점 <br> 22학번 여자</div>
+                <div class="re-box-right">23.11.12</div>
+            </div>
+            <div class="re-text">타 앱들은 분명 얼굴을 맞대고 확인이 가능한 장점이 있지만 저는 연픽만의 분위기가 더 좋은 것 같아요
+                매너있으셨던 분들도 연픽에서 더 많으셨고 연애도 연픽 통해서만 했었네요
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .complaint{
+            padding: 15px 20px;
+            font-family: "Noto Sans KR", sans-serif;
+        }
+        .complaint .comp-box{
+            border: 1px solid #000;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #ffe5ec;
+            padding: 10px 10px;
+        }
+        .complaint .comp-box p{
+            font-size: 15px;
+        }
+        .complaint .comp-box .text-box input{
+            margin-top: 15px;
+            padding: 5px 40px;
+            font-size: 15px;
+            border-radius: 10px;
+        }
+    </style>
+
+    <div class="complaint">
+        <div class="comp-box">
+            <img style="width: 30px; height: 30px;" src="img/mes.jpeg"><br>
+            <p>훈픽을 이용해주셔서 진심으로 감사해요</p>
+            <p>훈픽의 개선 사항이 있다면 연픽 팀에게 알려주세요</p>
+            <div class="text-box">
+            <input type="text"> <button type="button">-></button>
+            </div>
         </div>
     </div>
     </section>
+
+    </div>
 
     <script>
         function matching(){
