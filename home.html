@@ -13,7 +13,8 @@
     
     <style>
         body{
-            /* background-color: #99999999; */
+            background-color: rgb(247, 243, 245);
+            
         }
         #body{
             margin: 0 auto;
@@ -29,14 +30,17 @@
             margin: 24px 24px;
             padding: 15px 20px;
             font-family: "Noto Sans KR", sans-serif;
+            /* background-color: #ffe5ec; */
 
         }
         .matching img{
-            width: 100%;
-            margin-top: 7px;
+            width: 100px;
+            margin-top: 20px;
             /* transform: perspective(600px) rotateY(360deg);
             backface-visibility: hidden;
             transition: transform .5s linear 0s; */
+            animation: rotate-axis 5s linear infinite;
+            
         }
         .matching .mat-text{
             border: 1px solid #000;
@@ -54,9 +58,19 @@
             padding: 20px 50px;
             border-radius: 40px;
             border: none;
-            background-color: blueviolet;
+            background-color: #fb6f92;
             color: white;
         }
+        @keyframes rotate-axis {
+            from {
+                transform: perspective(800px) rotateY(0deg) rotate(27deg);
+            }
+            to {
+                transform: perspective(800px) rotateY(360deg) rotate(27deg);
+            }
+        }
+        
+        
     </style>
 </head>
 <body>
@@ -74,7 +88,7 @@
         <div class="mat-text">
             <p>소개팅</p>
         </div>
-        <div><img src="img/card.jpeg" alt=""></div>
+        <div><img src="img/heartcard.jpeg" alt=""></div>
         <div><p style="font-size: 12px; margin-top: 7px;">매칭이 비활성화 되어있어요 <br> 매칭을 활성하하고 이상형의 카드를 받아볼까요</p></div>
         <div><button type="button" onclick="matching();">매칭 활성화 하기</button></div>
     </div>
@@ -98,6 +112,7 @@
         }
         .mission .mis-box .mis-box-left{
             float: left;
+            
         }
         .mission .mis-box .mis-box-left2{
             float: left;

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #body{width: 420px; margin: 0 auto; border: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 24px 24px;
+        }
+        #body .card{
+            width: 100px;
+            margin-top: 20px;
+            /* transform: perspective(600px) rotateY(360deg);
+            backface-visibility: hidden;
+            transition: transform .5s linear 0s; */
+            animation: rotate-axis 5s linear infinite;
+            
+        }
+        @keyframes rotate-axis {
+            from {
+                transform: perspective(800px) rotateY(0deg) rotate(27deg);
+            }
+            to {
+                transform: perspective(800px) rotateY(360deg) rotate(27deg);
+            }
+        }
+        .login{
+            margin-top: 20px;
+            border: 1px solid #000;
+            padding: 20px 20px;
+            border-radius: 10px;
+        }
+        .login img {
+            width: 30px;
+        }
+        .login .login-box{
+            width: 300px;
+            display: flex;
+            margin: 10px ;
+            border: 1px solid #000;
+            border-radius: 10px;
+            padding: 10px 10px;
+        }
+        .login .login-box input{
+            width: 100%;
+            font-size: 15px;
+            
+        }
+        #body button{
+            margin: 20px 20px;
+            font-size: 15px;
+            border-radius: 30px;
+            border: none;
+            padding: 10px 100px;
+            background-color: #fb6f92;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="body">
+        <h3 style="text-align: center;">로그인하시고 <br> 운명의 카드를 받아보세요</h3>
+
+        <img class="card" src="img/heartcard.jpeg">
+        <div class="login">
+            <div class="login-box"><img src="img/id-icon.png"><input type="text"></div>
+            <div class="login-box"><img src="img/password-icon.png"><input type="text"></div>
+        </div>
+        <button type="button">로그인</button>
+        <p>아직 회원가입이 안되어있다면</p>
+        <button type="button">회원가입</button>
+    </div>
+</body>
+
+</html>

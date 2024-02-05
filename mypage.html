@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{margin: 0; padding: 0;}
+        #body{
+            width: 420px;
+            margin: 0 auto;
+            border: 1px solid #000;
+        }
+        .top{
+            margin: 24px 24px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .top img{
+            width: 70px;            
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="body">
+
+        <div class="top">
+            <div><img src="img/dog.jpeg"></div>
+            <div><h1>나의 이름</h1> <p>나의 아이디</p></div>
+        </div>
+
+        <style>
+            .mid{
+                margin: 24px 24px;
+            }
+            .mid .mid-box{
+                margin-top: 10px;
+                padding: 10px 20px;
+                border: 1px solid #000;
+                border-radius: 10px;
+            }
+            .mid .mid-box .mid-box-item{
+                margin: 25px 0px 25px 0px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .hid{
+                height: 2rem;
+                border-bottom: 1px solid #99999999;
+            }
+            .bot{
+                margin: 24px 24px;
+            }
+            .bot .bot-box{
+                display: flex;
+                border: 1px solid #000;
+                border-radius: 10px;
+                align-items: center;
+                padding: 10px 10px;
+            }
+            .bot img{
+                width: 30px;
+            }
+
+        </style>
+        <div class="mid">
+            <p>소개팅</p>
+            <div class="mid-box">
+                <div class="mid-box-item">소개팅 카트 수정 <p>></p></div>
+                <div class="mid-box-item">소개팅 자기소개 수정 <p>></p></div>
+                <div class="mid-box-item">이상형 조건 수정 <p>></p></div>
+            </div>
+            <div class="hid"></div>
+        </div>
+        <div class="bot">
+            <p>내이름의 보유픽</p>
+            <div class="bot-box">
+                <div><img src="img/img-pick-400.png" alt=""></div>
+                <div><p> 0픽</p></div>
+                <div style="margin-left: 280px;"><p> > </p></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
