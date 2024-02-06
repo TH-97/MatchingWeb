@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0
+        }
+
+        .firstbox1-1 {
+            width: 100%;
+            background-color: rgb(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+           
+            height: 100vh;
+
+        }
+
+        .display1-1 {
+
+
+            border-color: linear-gradient(to right, #FED7D7, rgba(0, 0, 0, 0.1));
+
+            text-align: center;
+            background-color: #FED7D7;
+            display: flex;
+            padding: 30px;
+
+        }
+
+        .display1-1 .sections1-1 {
+
+            text-align: center;
+            padding: 0px 30px;
+            width: 372px;
+        }
+
+        .display1-1 .sections1-1 .class1-1 {
+            padding: 16px 24px;
+            background-color: white;
+            border-radius: 20px;
+        }
+
+        .display1-1 .sections1-1 .blankbox1-1 {
+            height: 20px;
+            margin: 0 60px;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+        }
+
+        .display1-1 .sections1-1 .box1-1 .secret1-1 {
+            height: 242px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        .display1-1 .sections1-1 .box1-1 {
+            width: 312px;
+            height: 242px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px 30px 15px 30px;
+            
+        }
+
+
+        .firstbox1-1 .display1-1 .sections1-1 .box1-1 .secret1-1 .message1-1 .box_slice1-1 {
+            
+            height: 120.2px;
+            width: 102px;
+           
+            border-radius: 20px;
+
+            border: 1px solid white;
+             align-items: center;
+           justify-content: center;
+            display: flex;
+            
+
+        }
+
+        .firstbox1-1 .display1-1 .sections1-1 .box1-1 .secret1-1 .message1-1 .box_slice2-1 {
+            height: 120.2px;
+            float:right ;
+            border-radius:20px;
+            width: 102px;
+            border: 1px solid white;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            align-items: center;
+           justify-content: center;
+            display: flex;
+        }
+
+        .keyword {
+            margin: 15px 7px;
+            height: 112px;
+            display: flex;
+            
+
+
+        }
+
+        #btn {
+            color: white;
+            border-radius: 30px;
+            width: 180px;
+            height: 45px;
+            box-shadow: none;
+            cursor: pointer;
+            border: none;
+
+            top: 100px;
+            margin-top: 10px;
+
+        }
+
+        #btn:active,
+        #btn:focus {
+            border: none;
+            box-shadow: none;
+        }
+
+        .massage1-1{
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .firstbox1-1 .display1-1 .sections1-1 .goodbox1-1 {
+            width: 312px;
+            height: 242px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px 30px 15px 30px;
+            border:1px solid #FED7D7;
+        }
+
+        .display1-1 .sections1-1 .blankbox1-1 {
+            height: 40px;
+            margin: 0 60px;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+        }
+        .gooddaybox1-1{
+            border: 1px solid #fb6f92;
+            margin: 10px;
+            margin-bottom: 45px;
+            height: 70px;
+            margin-top: 50px;
+            border-radius: 30px;
+
+        }
+        .secret1-1{
+            display:flex ;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .message1-1{
+            height: 180px;
+            width: 242px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        #btnbtn1, #btnbtn2{
+            height: 120.2px;
+            float:right ;
+            border-radius:20px;
+            width: 102px;
+            background-color: #fb6f92;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            align-items: center;
+           justify-content: center;
+            display: flex;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="firstbox1-1">
+        <div class="display1-1">
+            <section class="sections1-1">
+                <div class="class1-1">
+                    <h4>오늘의 매칭 키워드 <small class="smal"></small></h4>
+
+                </div>
+                <div class="blankbox1-1"></div>
+                <div class="box1-1">
+                    <div class="secret1-1">
+                        <div class="message1-1">
+                            <div class="box_slice1-1">
+                               <button type="button" id="btnbtn1">키워드</button>
+                            </div>
+                            <div class="box_slice2-1">
+                                <button type="button" id="btnbtn2">키워드</button>
+                            </div>
+                        </div>
+                        <div class="heart"></div>
+                        <button type="button" style="background-color: #fb6f92; border-color: #fb6f92;" id="btn">소모임
+                            찾기</button>
+                    </div>
+                </div>
+                <div class="blankbox1-1"></div>
+                <div class="goodbox1-1">
+                    <div class="gooddaybox1-1"></div>
+                    <button type="button" style="background-color: #fb6f92; border-color: #fb6f92;" id="btn">입장</button>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
