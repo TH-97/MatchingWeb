@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #body{
+            width: 420px;
+            margin: 0 auto;
+        }
+
+        section .top{
+            border: 1px solid #000;
+            border-radius: 30px;
+            padding: 10px 20px;
+            margin: 24px 24px;
+            text-align: center;
+        }
+
+        section .mid{
+            border: 1px solid #000;
+            border-radius: 30px;
+            margin: 24px 24px;
+            
+            display: flex;
+            flex-direction: column;
+        }
+        section .mid .mid-box{
+            display: flex;
+            justify-content: space-around;
+            padding: 30px 30px;
+        }
+        section .mid .mid-box button{
+            font-size: 12px;
+            padding: 60px 40px;
+            border-radius: 20px;
+            border: none;
+        }
+        section .mid .mid-box2{
+            margin: 0 auto;
+        }
+        section .mid button{
+            font-size: 15px;
+            border-radius: 20px;
+            border: none;
+            margin: 10px 0 20px 0;
+            padding: 10px 40px;
+        }
+    </style>
+    <link rel="stylesheet" href="header.css">
+</head>
+
+<body>
+    <div id="body">
+        <header>
+            <div class="header-top">
+                <img class="icon" src="img/macicon.png">
+                <p class="iconText">taehunpick</p>
+                <img class="ins-icon" src="img/ins-icon.jpeg" alt="">
+            </div>
+
+            <div id="btns">
+                <a href="home.html"><button type="button">홈</button></a>
+                <a href="matching.html"><button type="button">매칭</button></a>
+                <a href="home.html"><button type="button">소모임</button></a>
+                <a href="mypage.html"><button type="button">내정보</button></a>
+            </div>
+        </header>
+
+        <section>
+            <div class="top">
+                <p>오늘의 매칭 키워드</p>
+            </div>
+            <div class="mid">
+                <div class="mid-box">
+                    <button type="button">랜텀 키워드</button>
+                    <button type="button">랜덤 키워드</button>
+                </div>
+                <div class="mid-box2">
+                <button type="button">입장</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
