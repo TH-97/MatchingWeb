@@ -6,20 +6,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <style>
         * {
             padding: 0;
             margin: 0
         }
+        body{
+            background-color: rgb(247, 243, 245);
+        }
 
         #body {
             width: 420px;
+            height: 100vh;
             margin: 0 auto;
-            border: 1px solid #000;
+            background-color: white;
+            border-radius: 10px;
+            font-family: "Noto Sans KR", sans-serif;
         }
 
         .top{
-            border: 1px solid #000;
+            box-shadow: 0 4px 8px rgb(0,0,0,0.15);
             border-radius: 10px;
             margin: 24px 24px;
 
@@ -27,7 +37,7 @@
             padding: 10px 20px;  
         }
         .mid{
-            border: 1px solid #000;
+            box-shadow: 0 4px 8px rgb(0,0,0,0.15);
             border-radius: 10px;
             margin: 24px 24px;
             
@@ -46,11 +56,12 @@
             margin-top: 20px;
         }
         .mid button{
-            border: 1px solid #000;
+            border: none;
             border-radius: 30px;
             font-size: 15px;
             padding: 10px 50px;
-            background-color: white;
+            background-color: #fb6f92;
+            color: white;
 
             margin: 20px 0 20px 0;
         }
