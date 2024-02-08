@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 
     <style>
         * {
@@ -20,6 +24,7 @@
             margin: 0 auto;
             border-radius: 10px;
             background-color: white;
+            font-family: "Noto Sans KR", sans-serif;
         }
 
         header {
@@ -68,8 +73,8 @@
     <div id="body">
         <header>
             <div class="top">
-                <button onclick="back">
-                    < </button>
+                <button type="button" class="backpage">
+                    뒤로가기 </button>
                         <p>리뷰</p>
                         <img width="30px" src="img/writing.png">
             </div>
@@ -122,14 +127,11 @@
                 header .bot .bot-box {
                     width: 300px;
                 }
-
-                header .bot .bot-box .bot-box-right {}
-
                 header .bot .bot-text {
                     width: 100%;
                 }
             </style>
-            <p style="margin: 5px 24px 0px 24px;">베스트 리뷰</p>
+            <p style="margin: 24px 24px 0px 24px;">베스트 리뷰</p>
             <div class="bot-scroll">
                 <div class="bot">
                     <div class="bot-box">
@@ -180,15 +182,16 @@
         </header>
 
         <style>
-            .select1 {
-                display: flex;
-                justify-self: start;
-                margin: 24px 24px;
+            .pickselect {
+                display: inline;
+                
+                margin: 10px 0 10px 24px;
             }
-            select{
+            .select{
                 -webkit-appearance: none;
                 width: 50px;
                 /* padding: 2px 0 2px 15px; */
+                margin-top: 50px;
                 margin-left: 3px;
                 text-align-last: center;
                 text-align: center;
@@ -235,19 +238,19 @@
         </style>
 
         <section>
-            <div class="select1">
-                <select name="" id="">
+            <div class="pickselect">
+                <select class="select" name="" id="">
                     <option value="">전체</option>
                     <option value="소개팅">소개팅</option>
                     <option value="미팅">미팅</option>
                     <option value="연애">연애</option>
                 </select>
-                <select name="" id="">
+                <select class="select" name="" id="">
                     <option value="">성별</option>
                     <option value="소개팅">남자</option>
                     <option value="소개팅">여자</option>
                 </select>
-                <select name="" id="">
+                <select class="select" name="" id="">
                     <option value="">학번</option>
                     <option value="">21학번</option>
                     <option value="">20학번</option>
@@ -299,7 +302,9 @@
             </div>
         </section>
     </div>
+    <script src="review.js"></script>
 
 </body>
+
 
 </html>
