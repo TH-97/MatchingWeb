@@ -198,7 +198,14 @@
         <div class="whole_part">
             
             <section id="dont">
-                <p class="p_class"><button onclick="history.back()" class="history_back"></button>소개팅</p>
+                <p class="p_class"><button onclick="back()" class="history_back"></button>소개팅</p>
+
+                <script>
+                    function back(){
+                        window.history.back();
+                        console.log(1);
+                    }
+                </script>
                 
 
             </section>
