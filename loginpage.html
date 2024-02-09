@@ -30,7 +30,7 @@
             height: 100vh;
         }
         #body h3{
-            margin: 40px 0 30px 0;
+            margin: 43px 0 30px 0;
         }
         #body .card{
             width: 100px;
@@ -58,9 +58,9 @@
             width: 240px;
             display: flex;
             margin: 10px ;
-            box-shadow: 0 4px 8px rgb(0,0,0,0.15);
+            box-shadow: 0 4px 8px rgb(0,0,0,0.2);
             border-radius: 10px;
-            padding: 10px 10px;
+            padding: 10px 5px;
         }
         .login .login-box input{
             width: 100%;
@@ -68,29 +68,47 @@
             
         }
         #body button{
-            margin: 20px 20px;
+            margin: 5px 20px;
             font-size: 15px;
             border-radius: 30px;
             border: none;
             padding: 10px 100px;
             background-color: #fb6f92;
             color: white;
+            border-bottom: 0.5px solid #777;
         }
     </style>
 </head>
 
 <body>
     <div id="body">
-        <h3 style="text-align: center;">로그인하시고 <br> 운명의 카드를 받아보세요</h3>
+        <h3 style="text-align: center;">로그인하고 <br> 운명의 카드를 받아보세요</h3>
 
         <img class="card" src="img/heartcard.jpeg">
         <div class="login">
-            <div class="login-box"><img src="img/id-icon.png"><input type="text"></div>
-            <div class="login-box"><img src="img/password-icon.png"><input type="text"></div>
+            <div class="login-box"><img src="img/icon-user.png"><input style="margin-left: 5px;" type="text"></div>
+            <style>
+                .login .img1{
+                    width: 30px;
+                    height: 28px;
+                    padding-left: 1px;
+                }
+            </style>
+            <div class="login-box"><img class="img1" src="img/icon-rock2.png"><input type="text"></div>
         </div>
         <button type="button">로그인</button>
-        <p>아직 회원가입이 안되어있다면</p>
+        
+
+        <style>
+            .login-bot{
+                text-align: center;
+                margin-top: 20px;
+            }
+        </style>
+        <div class="login-bot">
+        <p style="font-size: 14px;">아직 회원이 아니라면</p>
         <button type="button">회원가입</button>
+        </div>
     </div>
 </body>
 
